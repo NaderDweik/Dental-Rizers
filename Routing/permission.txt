@@ -1,0 +1,69 @@
+'delete_patients'
+'manage_users'
+'view_reports'
+'edit_settings'
+'view_analytics'
+'manage_roles'
+'backup_data'
+
+
+
+
+Route Types 
+
+1. Public Routes (everyone can access)
+javascript<Route path="/" element={<Home />} />
+<Route path="/about" element={<About />} />
+
+
+2. Public-Only Routes (only non-logged-in users)
+javascript<Route path="/login" element={
+  <PublicOnlyRoute><Login /></PublicOnlyRoute>
+} />
+
+
+3. Protected Routes (only logged-in users)
+javascript<Route path="/dashboard" element={
+  <ProtectedRoute><Dashboard /></ProtectedRoute>
+} />
+
+
+4. Role/Permission Routes (specific users only)
+javascript<Route path="/admin" element={
+  <ProtectedRoute requiredRole="admin"><AdminPanel /></ProtectedRoute>
+} />
+
+
+
+
+
+//API Fetching
+
+export const orderFood = createAsyncThunk(
+  'food/orderFood',
+  async (orderData) => {
+    // Call restaurant API
+    const response = await fetch('/api/order', {
+      method: 'POST',
+      body: JSON.stringify(orderData)
+    })
+    
+    if (response.ok) {
+      return await response.json()    // ← SUCCESS
+    } else {
+      throw new Error('Order failed') // ← ERROR
+    }
+  }
+)
+
+// In your slice:
+.addCase(orderFood.pending, (state) => {
+  state.status = "Ordering..."       // ← LOADING
+})
+.addCase(orderFood.fulfilled, (state, action) => {
+  state.status = "Order confirmed!"  // ← SUCCESS
+  state.order = action.payload
+})
+.addCase(orderFood.rejected, (state) => {
+  state.status = "Order failed!"    // ← ERROR
+})
