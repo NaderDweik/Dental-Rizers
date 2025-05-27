@@ -2,30 +2,6 @@
 
 This is a comprehensive React application designed for managing dental clinic operations, featuring a robust authentication and authorization system with different user roles.
 
------
-
-## Table of Contents
-
-1.  **Features**
-2.  **Authentication & Authorization System**
-      * User Roles
-      * Authentication Flow
-      * Authorization (Protected Routes)
-3.  **Technical Stack**
-4.  **Project Structure**
-5.  **Getting Started**
-      * Prerequisites
-      * Installation
-      * Running the Application
-6.  **Live Demo**
-7.  **Screenshots**
-8.  **Key Learning Outcomes**
-9.  **Contributing**
-10. **License**
-11. **Contact**
-
------
-
 ## Features
 
   * **User Authentication**: Secure login with JWT token handling.
@@ -187,22 +163,22 @@ Follow these instructions to get a copy of the project up and running on your lo
 Here are some screenshots demonstrating the application's key features and different user experiences.
 
 **Home Page (Public)**
-(Insert Home Page Screenshot)
+![image](https://github.com/user-attachments/assets/7e6862ae-e209-4183-88a3-1005044c9565)
 
 **Login Page (Public Only)**
-(Insert Login Page Screenshot)
+![image](https://github.com/user-attachments/assets/d4b6b2e9-b9d2-47e5-8bba-ee815534dc2d)
 
 **Admin Dashboard (Protected - Admin Role)**
-(Insert Admin Dashboard Screenshot)
+![image](https://github.com/user-attachments/assets/70df4b4b-672c-4c84-ba1b-6550fa3f3b8c)
 
 **Doctor Dashboard (Protected - Doctor Role)**
-(Insert Doctor Dashboard Screenshot)
+![image](https://github.com/user-attachments/assets/fcdac5b4-797a-419e-9df6-8ffd46e25b89)
 
 **Access Denied / Unauthorized Page (Example)**
-(Insert Access Denied Page Screenshot)
+![image](https://github.com/user-attachments/assets/bba04ab5-aef8-4204-a442-b328ae2a3f61)
 
 **Patient List (CRUD Example)**
-(Insert Patient List Screenshot)
+![image](https://github.com/user-attachments/assets/368cb068-e880-46f7-bde8-3de0f020140d)
 
 -----
 
@@ -233,15 +209,9 @@ Contributions are welcome\! If you have suggestions for improvements, find bugs,
 
 -----
 
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
-
------
-
 ## Contact
 
   * **Nader Dweik**
   * **GitHub**: [NaderDweik](https://www.google.com/search?q=https://github.com/NaderDweik)
-  * **Email**: your.email@example.com (Optional)
-  * **LinkedIn**: Your LinkedIn Profile URL (Optional)
+  * **Email**: nderdweik@gmail.com
+  * **LinkedIn**: naderdweik
