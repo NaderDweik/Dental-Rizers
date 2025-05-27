@@ -22,8 +22,8 @@ A comprehensive **React-based web application** for managing dental clinic opera
   
   </tr>
   <tr>
-    <td><strong>🚫 Access Denied</strong><br><img src="https://github.com/user-attachments/assets/bba04ab5-aef8-4204-a442-b328ae2a3f61" width="100%"/></td>
-    <td><strong>🩺 Doctor Dashboard</strong><br><img src="https://github.com/user-attachments/assets/fcdac5b4-797a-419e-9df6-8ffd46e25b89" width="100%"/></td>
+    <strong>🚫 Access Denied</strong><br><img src="https://github.com/user-attachments/assets/bba04ab5-aef8-4204-a442-b328ae2a3f61" width="100%"/>
+    <strong>🩺 Doctor Dashboard</strong><br><img src="https://github.com/user-attachments/assets/fcdac5b4-797a-419e-9df6-8ffd46e25b89" width="100%"/>
   </tr>
 
 </table>
