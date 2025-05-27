@@ -1,13 +1,3 @@
-Here’s an improved version of your `README.md` for **Dental Rizers**, featuring:
-
-* **Professional tone**
-* **Screenshots section moved up**
-* **Two-column layout for screenshots using Markdown HTML**
-* **Updated contact & LinkedIn**
-* **Minor grammar/style enhancements**
-
----
-
 # 🦷 Dental Rizers
 
 A comprehensive **React-based web application** for managing dental clinic operations. Built with modern technologies and best practices, it features secure authentication, role-based authorization, and a modular architecture for scalability.
