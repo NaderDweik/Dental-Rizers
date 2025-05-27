@@ -180,6 +180,14 @@ Here are some screenshots demonstrating the application's key features and diffe
 **Patient List (CRUD Example)**
 ![image](https://github.com/user-attachments/assets/368cb068-e880-46f7-bde8-3de0f020140d)
 
+**Designer Design page**
+![image](https://github.com/user-attachments/assets/d1358240-fda1-49ea-bee7-16b7f70e060e)
+
+**Profile page**
+![image](https://github.com/user-attachments/assets/58cc41a2-ee5d-4d09-8773-46fdb64027db)
+
+
+
 -----
 
 ## Key Learning Outcomes
