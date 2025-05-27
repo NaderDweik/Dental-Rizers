@@ -1,48 +1,70 @@
-# Dental Rizers
+Here’s an improved version of your `README.md` for **Dental Rizers**, featuring:
 
-This is a comprehensive React application designed for managing dental clinic operations, featuring a robust authentication and authorization system with different user roles.
+* **Professional tone**
+* **Screenshots section moved up**
+* **Two-column layout for screenshots using Markdown HTML**
+* **Updated contact & LinkedIn**
+* **Minor grammar/style enhancements**
 
-## Features
+---
 
-  * **User Authentication**: Secure login with JWT token handling.
-  * **Role-Based Authorization**: Differentiated access for Admin, Doctor, and Designer roles.
-  * **Protected Routes**: Custom components to enforce authentication and role-based access.
-  * **Global State Management**: Efficient state handling with Redux Toolkit.
-  * **Modular Project Structure**: Organized codebase for easy maintenance and scalability.
-  * **Responsive UI**: (Assumed, can be explicitly stated if implemented)
-  * **API Integration**: Uses DummyJSON for mock authentication and data.
+# 🦷 Dental Rizers
 
------
+A comprehensive **React-based web application** for managing dental clinic operations. Built with modern technologies and best practices, it features secure authentication, role-based authorization, and a modular architecture for scalability.
 
-## Authentication & Authorization System
+---
 
-The application features a comprehensive authentication and authorization system:
+## 📸 Screenshots
 
-### User Roles
+<table>
+  <tr>
+    <td><strong>🏠 Home Page (Public)</strong><br><img src="https://github.com/user-attachments/assets/7e6862ae-e209-4183-88a3-1005044c9565" width="100%"/></td>
+    <td><strong>🔐 Login Page (Public Only)</strong><br><img src="https://github.com/user-attachments/assets/d4b6b2e9-b9d2-47e5-8bba-ee815534dc2d" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧑‍💼 Admin Dashboard</strong><br><img src="https://github.com/user-attachments/assets/70df4b4b-672c-4c84-ba1b-6550fa3f3b8c" width="100%"/></td>
+    <td><strong>🩺 Doctor Dashboard</strong><br><img src="https://github.com/user-attachments/assets/fcdac5b4-797a-419e-9df6-8ffd46e25b89" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><strong>🚫 Access Denied</strong><br><img src="https://github.com/user-attachments/assets/bba04ab5-aef8-4204-a442-b328ae2a3f61" width="100%"/></td>
+    <td><strong>👨‍👩‍👧‍👦 Patient List (CRUD)</strong><br><img src="https://github.com/user-attachments/assets/368cb068-e880-46f7-bde8-3de0f020140d" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><strong>🎨 Designer Page</strong><br><img src="https://github.com/user-attachments/assets/d1358240-fda1-49ea-bee7-16b7f70e060e" width="100%"/></td>
+    <td><strong>👤 Profile Page</strong><br><img src="https://github.com/user-attachments/assets/58cc41a2-ee5d-4d09-8773-46fdb64027db" width="100%"/></td>
+  </tr>
+</table>
 
-  * **Admin**: Full access to all features, including administrative panels.
-  * **Doctor**: Access to patient management, treatment plans, and doctor-specific dashboards.
-  * **Designer**: Limited access, primarily to design-related sections.
+---
 
-### Authentication Flow
+## 🔐 Authentication & Authorization
 
-1.  User enters credentials on the **Login page**.
-2.  Credentials are sent to a dummy authentication API (DummyJSON).
-3.  Upon successful login, a **JWT token** and user details are received.
-4.  The JWT token and user information (including role and permissions) are stored in **Redux state** and `localStorage`.
-5.  The user is programmatically redirected to their respective dashboard or a default protected route.
+Dental Rizers includes a full authentication and role-based authorization system:
 
-### Authorization (Protected Routes)
+### 👥 User Roles
 
-  * Custom `ProtectedRoute` and `PublicOnlyRoute` components are used to wrap route elements.
-  * These components check the `isAuthenticated` status from Redux.
-  * For **role-based access**, `ProtectedRoute` also checks if the logged-in user's role matches the `requiredRole` prop.
-  * If authentication/authorization checks fail, the user is redirected (e.g., to `/login` or an "Access Denied" page).
+* **Admin** – Full access to all features.
+* **Doctor** – Can manage patients, treatments, and view dashboards.
+* **Designer** – Limited to design-related views.
 
-<!-- end list -->
+### 🔄 Authentication Flow
 
-```javascript
-// Example of ProtectedRoute usage in App.jsx
+1. User logs in via the **Login Page**
+2. Credentials are verified via DummyJSON API
+3. A **JWT token** and user data (including role) are received
+4. Token & user data are saved in **Redux state** and `localStorage`
+5. User is redirected based on their role
+
+### 🔒 Protected Routes
+
+Custom wrappers (`<ProtectedRoute />`, `<PublicOnlyRoute />`) check:
+
+* `isAuthenticated` status via Redux
+* Role matching (if `requiredRole` is set)
+
+If validation fails, users are redirected to `/login` or an **Access Denied** page.
+
+```jsx
 <Route path="/dashboard" element={
   <ProtectedRoute>
     <Dashboard />
@@ -56,170 +78,95 @@ The application features a comprehensive authentication and authorization system
 } />
 ```
 
------
+---
 
-## Technical Stack
+## ⚙️ Features
 
-  * **Frontend**:
-      * **React**: JavaScript library for building user interfaces.
-      * **React Router DOM**: Declarative routing for React.
-      * **Redux Toolkit**: Efficient global state management for React applications.
-      * **React Redux**: Official React bindings for Redux.
-      * **Styling**: (Assumed basic CSS/Tailwind/Styled Components - can be specified if implemented)
-      * **API Integration**:
-          * **DummyJSON API**: Used for mock authentication and data fetching.
-          * **Axios / Fetch API**: For making HTTP requests (can specify which one used).
+* ✅ **Authentication** with JWT
+* 🔐 **Role-Based Access**: Admin, Doctor, Designer
+* 🔒 **Protected Routes** via wrappers
+* 🧠 **Redux Toolkit** for global state
+* 🧩 **Modular structure** for scalability
+* 📱 **Responsive UI** *(if implemented)*
+* 🔗 **DummyJSON API** integration
 
------
+---
 
-## Project Structure
+## 🛠 Tech Stack
 
-The project follows a modular and organized structure to enhance readability and maintainability.
+* **React** – UI library
+* **React Router DOM** – Routing
+* **Redux Toolkit + React Redux** – State management
+* **Axios / Fetch** – API calls
+* *(Styling via CSS/Tailwind – specify if needed)*
+
+---
+
+## 🗂 Project Structure
 
 ```
 ├── public/
 ├── src/
-│   ├── assets/                 # Static assets like images, icons
+│   ├── assets/                 # Images, icons
 │   ├── components/
-│   │   ├── auth/
-│   │   │   ├── ProtectedRoute.jsx  # Component to protect routes requiring authentication
-│   │   │   └── PublicOnlyRoute.jsx # Component to redirect logged-in users from public-only routes
-│   │   ├── common/             # Reusable UI components (e.g., Navbar, Footer)
-│   │   └── patients/           # Components related to patient management
-│   ├── config/                 # Configuration files (e.g., API_BASE_URL)
-│   ├── hooks/                  # Custom React hooks
+│   │   ├── auth/               # Auth wrappers
+│   │   ├── common/             # Reusable UI
+│   │   └── patients/           # Patient views
+│   ├── config/                 # App configs
+│   ├── hooks/                  # Custom hooks
 │   ├── pages/
-│   │   ├── auth/
-│   │   │   └── LoginPage.jsx   # Login page component
-│   │   ├── admin/
-│   │   │   └── AdminDashboard.jsx # Admin specific dashboard
-│   │   ├── doctor/
-│   │   │   └── DoctorDashboard.jsx # Doctor specific dashboard
-│   │   ├── designer/
-│   │   │   └── DesignerDashboard.jsx # Designer specific dashboard
-│   │   ├── Home.jsx            # Public home page
-│   │   ├── Dashboard.jsx       # General user dashboard (default protected)
-│   │   ├── NotFound.jsx        # 404 page
-│   │   └── ...                 # Other specific pages (e.g., PatientsList, PatientDetail)
+│   │   ├── auth/               # Login
+│   │   ├── admin/              # Admin view
+│   │   ├── doctor/             # Doctor view
+│   │   ├── designer/           # Designer view
+│   │   └── ...                 # Shared pages
 │   ├── services/
-│   │   └── authService.js      # Functions for API calls related to authentication
-│   │   └── patientService.js   # Functions for API calls related to patients
+│   │   ├── authService.js
+│   │   └── patientService.js
 │   ├── store/
-│   │   ├── index.js            # Redux store configuration
-│   │   └── authSlice.js        # Redux slice for authentication state
-│   │   └── patientSlice.js     # Redux slice for patient data (if implemented)
-│   ├── App.jsx                 # Main application component, defines routes
-│   ├── main.jsx                # Entry point of the React application
-│   └── index.css / App.css     # Global styles
-└── package.json
-└── README.md
+│   │   ├── authSlice.js
+│   │   └── patientSlice.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css / App.css
 ```
 
------
+---
 
-## Getting Started
+## 🚀 Getting Started
 
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+### 🧾 Prerequisites
 
-### Prerequisites
+* Node.js (LTS)
+* npm or yarn
 
-  * Node.js (LTS version recommended)
-  * npm or yarn
+### 📦 Installation
 
-### Installation
+```bash
+git clone https://github.com/NaderDweik/Dental-Rizers.git
+cd Dental-Rizers
+npm install
+# or
+yarn install
+```
 
-1.  **Clone the repository**:
-    ```bash
-    git clone https://github.com/NaderDweik/Dental-Rizers.git
-    cd Dental-Rizers
-    ```
-2.  **Install dependencies**:
-    ```bash
-    npm install
-    # OR
-    yarn install
-    ```
+### 🧪 Run Locally
 
-### Running the Application
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-1.  **Start the development server**:
-    ```bash
-    npm run dev
-    # OR
-    yarn dev
-    ```
-2.  **Open your browser**: The application will typically be available at `http://localhost:5173` (or another port if 5173 is in use).
+Visit: `http://localhost:5173`
 
------
+---
 
-## Live Demo
+## 📇 Contact
 
-[Your Live Demo URL Here]
+* **Nader Dweik**
+* 🔗 [LinkedIn](https://www.linkedin.com/in/naderdweik/)
+* 📧 [nderdweik@gmail.com](mailto:nderdweik@gmail.com)
+* 💻 [GitHub](https://github.com/NaderDweik)
 
------
-
-## Screenshots
-
-Here are some screenshots demonstrating the application's key features and different user experiences.
-
-**Home Page (Public)**
-![image](https://github.com/user-attachments/assets/7e6862ae-e209-4183-88a3-1005044c9565)
-
-**Login Page (Public Only)**
-![image](https://github.com/user-attachments/assets/d4b6b2e9-b9d2-47e5-8bba-ee815534dc2d)
-
-**Admin Dashboard (Protected - Admin Role)**
-![image](https://github.com/user-attachments/assets/70df4b4b-672c-4c84-ba1b-6550fa3f3b8c)
-
-**Doctor Dashboard (Protected - Doctor Role)**
-![image](https://github.com/user-attachments/assets/fcdac5b4-797a-419e-9df6-8ffd46e25b89)
-
-**Access Denied / Unauthorized Page (Example)**
-![image](https://github.com/user-attachments/assets/bba04ab5-aef8-4204-a442-b328ae2a3f61)
-
-**Patient List (CRUD Example)**
-![image](https://github.com/user-attachments/assets/368cb068-e880-46f7-bde8-3de0f020140d)
-
-**Designer Design page**
-![image](https://github.com/user-attachments/assets/d1358240-fda1-49ea-bee7-16b7f70e060e)
-
-**Profile page**
-![image](https://github.com/user-attachments/assets/58cc41a2-ee5d-4d09-8773-46fdb64027db)
-
-
-
------
-
-## Key Learning Outcomes
-
-This project provides practical insights into:
-
-  * **Mastering React Router DOM**: From basic `Routes` and `Route` to `Link`, `NavLink`, and programmatic navigation with `useNavigate`.
-  * **Robust Authentication**: Implementing a full-fledged authentication system with JWT tokens, login, logout, and session persistence.
-  * **Advanced Authorization**: Designing and applying role-based and permission-based access control for different user types.
-  * **Effective State Management**: Utilizing Redux Toolkit for scalable and predictable global state.
-  * **Building Reusable Components**: Creating generic `ProtectedRoute` and `PublicOnlyRoute` components for cleaner code.
-  * **Integrating with Real APIs**: Understanding the workflow of fetching data and handling responses with a backend.
-  * **Structuring Large React Applications**: Organizing components, pages, and Redux logic for maintainability.
-
------
-
-## Contributing
-
-Contributions are welcome\! If you have suggestions for improvements, find bugs, or want to add new features, please feel free to:
-
-1.  Fork the repository.
-2.  Create a new branch (`git checkout -b feature/your-feature-name`).
-3.  Make your changes.
-4.  Commit your changes (`git commit -m 'feat: Add new feature'`).
-5.  Push to the branch (`git push origin feature/your-feature-name`).
-6.  Open a Pull Request.
-
------
-
-## Contact
-
-  * **Nader Dweik**
-  * **GitHub**: [NaderDweik](https://www.google.com/search?q=https://github.com/NaderDweik)
-  * **Email**: nderdweik@gmail.com
-  * **LinkedIn**: naderdweik
+---
