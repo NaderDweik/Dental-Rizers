@@ -8,7 +8,7 @@ A comprehensive **React-based web application** for managing dental clinic opera
 
 <table>
   <tr>
-    <td><strong>🏠 Home Page (Public)</strong><br><img src="https://github.com/user-attachments/assets/7e6862ae-e209-4183-88a3-1005044c9565" width="100%"/></td>
+    <strong>🏠 Home Page (Public)</strong><br><img src="https://github.com/user-attachments/assets/7e6862ae-e209-4183-88a3-1005044c9565" width="100%"/>
    <strong>🔐 Login Page (Public Only)</strong><br><img src="https://github.com/user-attachments/assets/d4b6b2e9-b9d2-47e5-8bba-ee815534dc2d" width="100%"/>
   </tr>
   <tr>
