@@ -14,16 +14,18 @@ A comprehensive **React-based web application** for managing dental clinic opera
   <tr>
     <td><strong>🧑‍💼 Admin Dashboard</strong><br><img src="https://github.com/user-attachments/assets/70df4b4b-672c-4c84-ba1b-6550fa3f3b8c" width="100%"/></td>
     <td><strong>👨‍👩‍👧‍👦 Patient List (CRUD)</strong><br><img src="https://github.com/user-attachments/assets/368cb068-e880-46f7-bde8-3de0f020140d" width="100%"/></td>
-
+  
+  <tr>
+    <td><strong>🎨 Designer Page</strong><br><img src="https://github.com/user-attachments/assets/d1358240-fda1-49ea-bee7-16b7f70e060e" width="100%"/></td>
+    <td><strong>👤 Profile Page</strong><br><img src="https://github.com/user-attachments/assets/58cc41a2-ee5d-4d09-8773-46fdb64027db" width="100%"/></td>
+  </tr>
+  
   </tr>
   <tr>
     <td><strong>🚫 Access Denied</strong><br><img src="https://github.com/user-attachments/assets/bba04ab5-aef8-4204-a442-b328ae2a3f61" width="100%"/></td>
     <td><strong>🩺 Doctor Dashboard</strong><br><img src="https://github.com/user-attachments/assets/fcdac5b4-797a-419e-9df6-8ffd46e25b89" width="100%"/></td>
   </tr>
-  <tr>
-    <td><strong>🎨 Designer Page</strong><br><img src="https://github.com/user-attachments/assets/d1358240-fda1-49ea-bee7-16b7f70e060e" width="100%"/></td>
-    <td><strong>👤 Profile Page</strong><br><img src="https://github.com/user-attachments/assets/58cc41a2-ee5d-4d09-8773-46fdb64027db" width="100%"/></td>
-  </tr>
+
 </table>
 
 ---
